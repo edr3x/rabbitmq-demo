@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  rabbitmq:
+    image: rabbitmq
+    container_name: rabbitmq-server
+    ports:
+      - ${PORT}:5672

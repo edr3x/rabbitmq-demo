@@ -3,7 +3,8 @@ import * as amqp from "amqplib";
 import config from "./config/env";
 const port = config.port;
 
-const msg = { number: process.argv[2] };
+const msg = { number: process.argv[2] }; // can be object of any kind
+//INFO  Here we are sending a number as a key and value is sent via argument when we run publisher
 
 async function connect() {
   try {
